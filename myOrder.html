@@ -42,6 +42,55 @@
             display: flex;
             flex-direction: column;
         }
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr;    
+            gap: 16px;
+            align-items: center;
+            background-color: var(--text-input-field);
+            margin-bottom: 24px;
+            border-radius: 8px;   
+            padding: 0 24px;   
+        }
+        .order p:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+        }
+        .order p span:nth-child(1) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        .order p span:nth-child(2) {
+            font-size: var(--sm);
+            color: var(--very-light-pink);
+        }
+        .order p:nth-child(2) {
+            text-align: end;
+            font-weight: bold;
+        }
+        .shopping-card {
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            margin-bottom: 24px;
+            align-items: center;
+        }
+        .shopping-card figure {
+            margin: 0;
+        }
+        .shopping-card figure img {
+            width: 90px;
+            height: 90px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .shopping-card p:nth-child(2) {
+            color: var(--very-light-pink);
+        }
+        .shopping-card p:nth-child(3) {
+            font-size: var(--md);
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -49,55 +98,56 @@
         <div class="my-order-container">
             <h1 class="title">My order</h1>
             <div class="my-order-content">
-                <div></div>
-                <p>
-                   <span>02.01.2023</span>
-                   <span>6 articles</span> 
-                </p>
-                <p>560.00</p>
-            </div>
+                <div class="order">
+                    <p>
+                        <span>02.01.2023</span>
+                        <span>6 articles</span> 
+                     </p>
+                     <p>$560.00</p>
+                </div>
 
-            <div class="shopping-card">
+                <div class="shopping-card">
                 <figure>
                     <img src="https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike">
                 </figure>
                 <p>nkr600</p>
                 <p>$20000,00</p>
-            </div>
-            <div class="shopping-card">
+                </div>
+                <div class="shopping-card">
                 <figure>
                     <img src="https://images.pexels.com/photos/2377893/pexels-photo-2377893.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike">
                 </figure>
                 <p>nkr600</p>
                 <p>$20000,00</p>
-            </div>
-            <div class="shopping-card">
+                </div>
+                <div class="shopping-card">
                 <figure>
                     <img src="https://images.pexels.com/photos/681795/pexels-photo-681795.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike">
                 </figure>
                 <p>nkr600</p>
                 <p>$20000,00</p>
-            </div>
-            <div class="shopping-card">
+                </div>
+                <div class="shopping-card">
                 <figure>
                     <img src="https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg?auto=compress&cs=tinysrgb&w=600" alt="bike">
                 </figure>
                 <p>nkr600</p>
                 <p>$20000,00</p>
-            </div>
-            <div class="shopping-card">
+                </div>
+                <div class="shopping-card">
                 <figure>
                     <img src="https://images.pexels.com/photos/690816/pexels-photo-690816.jpeg?auto=compress&cs=tinysrgb&w=600 alt="bike">
                 </figure>
                 <p>nkr600</p>
                 <p>$20000,00</p>
-            </div>
-            <div class="shopping-card">
+                </div>
+                <div class="shopping-card">
                 <figure>
                     <img src="https://images.pexels.com/photos/819805/pexels-photo-819805.jpeg?auto=compress&cs=tinysrgb&w=600 alt="bike">
                 </figure>
                 <p>nkr600</p>
                 <p>$20000,00</p>
+                </div>
             </div>
         </div>    
     </div>
